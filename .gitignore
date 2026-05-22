@@ -1,3 +1,11 @@
+# ASK CLI — deployment state (contains ARNs and deploy hashes, environment-specific)
+.ask/ask-states.json
+# ASK CLI — build artifacts
+.ask/lambda/
+
+# Visual Studio
+.vs/
+
 # Logs
 logs
 *.log

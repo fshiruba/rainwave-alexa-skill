@@ -1,0 +1,58 @@
+{
+  "manifest": {
+    "manifestVersion": "1.0",
+    "publishingInformation": {
+      "locales": {
+        "en-US": {
+          "name": "Rainwave",
+          "summary": "Play video game music radio from Rainwave.cc",
+          "description": "Listen to Rainwave.cc's video game music radio on your Echo device. Choose from five channels: Game, OC ReMix, Covers, Chiptune, or All. Ask what's playing, switch channels with your voice, or use the transport controls on any Echo device.",
+          "keywords": [
+            "rainwave",
+            "video game music",
+            "game music",
+            "radio",
+            "chiptune",
+            "ocremix"
+          ],
+          "examplePhrases": [
+            "Alexa, open Rainwave",
+            "Alexa, ask Rainwave to play OC ReMix",
+            "Alexa, ask Rainwave what's playing"
+          ]
+        },
+        "pt-BR": {
+          "name": "Rainwave",
+          "summary": "Ouça rádio de música de jogos da Rainwave.cc",
+          "description": "Ouça a rádio de música de videogame da Rainwave.cc no seu Echo. Escolha entre cinco canais: Game, OC ReMix, Covers, Chiptune ou Todos. Pergunte o que está tocando, troque de canal por voz ou use os controles de transporte do seu Echo.",
+          "keywords": [
+            "rainwave",
+            "música de jogo",
+            "game music",
+            "rádio",
+            "chiptune",
+            "ocremix"
+          ],
+          "examplePhrases": [
+            "Alexa, abrir Rainwave",
+            "Alexa, pedir ao Rainwave para tocar OC ReMix",
+            "Alexa, pedir ao Rainwave o que está tocando"
+          ]
+        }
+      },
+      "isAvailableWorldwide": true,
+      "testingInstructions": "Enable the skill and say 'Alexa, open Rainwave' to start the Game channel.",
+      "distributionCountries": []
+    },
+    "apis": {
+      "custom": {
+        "interfaces": [
+          {
+            "type": "AUDIO_PLAYER"
+          }
+        ]
+      }
+    },
+    "permissions": []
+  }
+}

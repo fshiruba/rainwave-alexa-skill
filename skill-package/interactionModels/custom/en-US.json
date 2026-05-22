@@ -1,0 +1,127 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "rainwave",
+      "intents": [
+        { "name": "AMAZON.StopIntent",   "samples": [] },
+        { "name": "AMAZON.PauseIntent",  "samples": [] },
+        { "name": "AMAZON.ResumeIntent", "samples": [] },
+        { "name": "AMAZON.CancelIntent", "samples": [] },
+        { "name": "AMAZON.NextIntent",   "samples": [] },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": ["help", "what can I say", "what channels are there"]
+        },
+        {
+          "name": "PlayChannelIntent",
+          "slots": [
+            { "name": "channel", "type": "RAINWAVE_CHANNEL" }
+          ],
+          "samples": [
+            "play {channel}",
+            "play {channel} channel",
+            "start {channel}",
+            "switch to {channel}",
+            "switch to the {channel} channel",
+            "tune to {channel}",
+            "put on {channel}",
+            "play the {channel} channel",
+            "I want to listen to {channel}",
+            "change to {channel}"
+          ]
+        },
+        {
+          "name": "NowPlayingIntent",
+          "slots": [],
+          "samples": [
+            "what's playing",
+            "what is playing",
+            "what song is this",
+            "what's this song",
+            "now playing",
+            "what are we listening to",
+            "tell me what's playing",
+            "what channel is this"
+          ]
+        }
+      ],
+      "types": [
+        {
+          "name": "RAINWAVE_CHANNEL",
+          "values": [
+            {
+              "id": "game",
+              "name": {
+                "value": "game",
+                "synonyms": [
+                  "game music",
+                  "games",
+                  "gaming",
+                  "video game music",
+                  "game channel"
+                ]
+              }
+            },
+            {
+              "id": "ocremix",
+              "name": {
+                "value": "OC ReMix",
+                "synonyms": [
+                  "OC remix",
+                  "ocremix",
+                  "o c remix",
+                  "remix",
+                  "remixes",
+                  "game remixes",
+                  "OC channel"
+                ]
+              }
+            },
+            {
+              "id": "covers",
+              "name": {
+                "value": "covers",
+                "synonyms": [
+                  "cover",
+                  "cover songs",
+                  "cover music",
+                  "video game covers",
+                  "covers channel"
+                ]
+              }
+            },
+            {
+              "id": "chiptune",
+              "name": {
+                "value": "chiptune",
+                "synonyms": [
+                  "chip tune",
+                  "chiptunes",
+                  "chip music",
+                  "eight bit",
+                  "8 bit",
+                  "8-bit",
+                  "chiptune channel"
+                ]
+              }
+            },
+            {
+              "id": "all",
+              "name": {
+                "value": "all",
+                "synonyms": [
+                  "everything",
+                  "mix",
+                  "all channels",
+                  "all music",
+                  "all channel",
+                  "mixed"
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

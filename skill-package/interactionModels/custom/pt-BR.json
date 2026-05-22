@@ -1,0 +1,131 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "rainwave",
+      "intents": [
+        { "name": "AMAZON.StopIntent",   "samples": [] },
+        { "name": "AMAZON.PauseIntent",  "samples": [] },
+        { "name": "AMAZON.ResumeIntent", "samples": [] },
+        { "name": "AMAZON.CancelIntent", "samples": [] },
+        { "name": "AMAZON.NextIntent",   "samples": [] },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": ["ajuda", "o que posso dizer", "quais canais existem"]
+        },
+        {
+          "name": "PlayChannelIntent",
+          "slots": [
+            { "name": "channel", "type": "RAINWAVE_CHANNEL" }
+          ],
+          "samples": [
+            "tocar {channel}",
+            "tocar o canal {channel}",
+            "tocar {channel} agora",
+            "iniciar {channel}",
+            "mudar para {channel}",
+            "mudar para o canal {channel}",
+            "trocar para {channel}",
+            "quero ouvir {channel}",
+            "coloca {channel}",
+            "coloca o canal {channel}",
+            "toca {channel}"
+          ]
+        },
+        {
+          "name": "NowPlayingIntent",
+          "slots": [],
+          "samples": [
+            "o que está tocando",
+            "o que está tocando agora",
+            "que música é essa",
+            "qual é essa música",
+            "o que é isso",
+            "tocando agora",
+            "qual canal é esse",
+            "me diz o que está tocando"
+          ]
+        }
+      ],
+      "types": [
+        {
+          "name": "RAINWAVE_CHANNEL",
+          "values": [
+            {
+              "id": "game",
+              "name": {
+                "value": "game",
+                "synonyms": [
+                  "músicas de jogos",
+                  "música de jogo",
+                  "jogos",
+                  "jogo",
+                  "game music",
+                  "canal game"
+                ]
+              }
+            },
+            {
+              "id": "ocremix",
+              "name": {
+                "value": "OC ReMix",
+                "synonyms": [
+                  "OC remix",
+                  "ocremix",
+                  "o c remix",
+                  "remixes",
+                  "remix",
+                  "remixes de jogos",
+                  "canal OC"
+                ]
+              }
+            },
+            {
+              "id": "covers",
+              "name": {
+                "value": "covers",
+                "synonyms": [
+                  "cover",
+                  "regravações",
+                  "regravação",
+                  "versões",
+                  "músicas cover",
+                  "canal covers"
+                ]
+              }
+            },
+            {
+              "id": "chiptune",
+              "name": {
+                "value": "chiptune",
+                "synonyms": [
+                  "chip tune",
+                  "chiptunes",
+                  "chip music",
+                  "oito bits",
+                  "oito bit",
+                  "8 bits",
+                  "8 bit",
+                  "canal chiptune"
+                ]
+              }
+            },
+            {
+              "id": "all",
+              "name": {
+                "value": "todos",
+                "synonyms": [
+                  "tudo",
+                  "todos os canais",
+                  "mistura",
+                  "all",
+                  "canal all",
+                  "canal todos"
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
